@@ -12,7 +12,7 @@ function App() {
     //   alert("Enter a Todo Item");
     //   return 0;
     // }
-    dispatch(TodoSlice);
+    dispatch(addingtodo(singleTodo));
     setSingleTodo("");
   }
   const deletetodos = (id) => {

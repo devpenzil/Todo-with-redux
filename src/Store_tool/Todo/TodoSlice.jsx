@@ -5,12 +5,13 @@ export const todolist = createSlice({
     initialState: {
         value : ["Buy a Coffe","Go to Shop","wash car"]
     },
-    reducer: {
+    reducers: {
         addingtodo: (state,action) => {
-            state.value = state.concat([action.payload])
+            // console.log(action.payload);
+            state.value = state.value.concat([action.payload])
         },
         deletingtodo: (state,action) => {
-            state.value = state.concat([action.payload])
+            state.value = state.value.concat([action.payload])
         }
     }
 })
